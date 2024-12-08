@@ -1,0 +1,66 @@
+/* Logo hover effect */
+.logo {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-img {
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: rotate(10deg);
+}
+
+.logo-text {
+  transition: color 0.3s ease;
+}
+
+.logo-text:hover {
+  color: #dc143c;
+}
+
+/* Links styling and hover effects */
+.link {
+  text-decoration: none;
+  color: #2f2f2f;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #dc143c;
+}
+
+/* Add an underline animation on hover */
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #dc143c;
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+/* Active link styling */
+.link.active {
+  color: #dc143c;
+}
+
+.link.active::after {
+  width: 100%;
+}
+
+.active {
+  color: #dc143c;
+}

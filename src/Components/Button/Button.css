@@ -1,0 +1,35 @@
+.button {
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  padding: var(--padding);
+  border: none;
+  border-radius: var(--border-radius);
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  text-transform: uppercase;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+.icon-only {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-family: inherit;
+}
+
+.button-fixed {
+  position: fixed;
+}

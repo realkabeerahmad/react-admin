@@ -1,0 +1,41 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-bg, #f7f7f7);
+  padding: var(--spacing-padding, 1rem);
+  width: 100%;
+  max-width: 250px;
+  max-height: calc(100dvh - 76px);
+  position: sticky;
+  top: 76px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: max-width 0.3s ease, padding 0.3s ease; /* Smooth transition for collapse */
+}
+
+.sidebar.sidebar-colapsed {
+  max-width: 80px; /* Collapsed width */
+}
+
+.sidebar .button {
+  margin-bottom: var(--spacing-margin, 0.5rem);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  /* color: var(--primary-text, #333); */
+  transition: color 0.2s ease;
+}
+
+.collaps-button {
+  position: absolute;
+  right: -20px;
+  bottom: 1rem;
+  padding: 0.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--spacing-border-radius, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
